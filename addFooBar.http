@@ -1,0 +1,8 @@
+POST http://localhost:8080/v1/foobar/add
+Content-Type: application/json
+
+{
+  "foo": "1234567890",
+  "bar": "12345678000190",
+  "value": 123.45
+}

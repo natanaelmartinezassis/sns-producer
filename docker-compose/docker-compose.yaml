@@ -1,0 +1,26 @@
+version: '3.0'
+
+services:
+  localstack:
+    image: localstack/localstack-full:latest
+    container_name: localstack
+    hostname: localstack
+    environment:
+      - AWS_DEFAULT_REGION=us-east-1
+      - EDGE_PORT=4566
+    ports:
+      - 4566-4597:4566-4597
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  sns_producer:
+    build:
+      context: ../.
+    image: sns_producer:latest
+    container_name: sns_producer
+    environment:
+      - AWS_ENDPOINT=http://localstack:4566
+    ports:
+      - 8080:8080
+    depends_on:
+      - localstack

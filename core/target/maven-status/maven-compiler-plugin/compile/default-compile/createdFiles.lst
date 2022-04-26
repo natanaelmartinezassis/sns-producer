@@ -1,0 +1,6 @@
+com/example/appname/model/FooBar.class
+com/example/appname/model/FooBar$FooBarBuilder.class
+com/example/appname/gateway/SendFooBarToTopicGateway.class
+com/example/appname/model/Header$Builder.class
+com/example/appname/usecase/SaveFooBar.class
+com/example/appname/model/Header.class

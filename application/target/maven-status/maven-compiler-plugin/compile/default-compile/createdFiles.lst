@@ -1,0 +1,12 @@
+com/example/appname/gateway/message/support/GenericMessage$GenericMessageBuilder.class
+com/example/appname/gateway/message/support/SendToSNSTopic.class
+com/example/appname/entrypoint/rest/FooBarRequest.class
+com/example/appname/gateway/message/support/GenericMessage.class
+com/example/appname/config/aws/AWSProperty.class
+com/example/appname/gateway/message/FooBarMessage.class
+com/example/appname/gateway/message/FooBarMessage$FooBarMessageBuilder.class
+com/example/appname/Application.class
+com/example/appname/config/aws/credentials/AWSCredentialsConfig.class
+com/example/appname/entrypoint/rest/FooBarRestController.class
+com/example/appname/gateway/message/SendFooBarToTopicProvider.class
+com/example/appname/config/aws/sns/SNSConfig.class
