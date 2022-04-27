@@ -13,11 +13,11 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
 
-  sns_producer:
+  sns-producer:
     build:
       context: ../.
-    image: sns_producer:latest
-    container_name: sns_producer
+    image: sns-producer:latest
+    container_name: sns-producer
     environment:
       - AWS_ENDPOINT=http://localstack:4566
     ports:

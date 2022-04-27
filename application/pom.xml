@@ -89,7 +89,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>sns_producer-${project.version}</finalName>
+        <finalName>sns-producer-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

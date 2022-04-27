@@ -6,7 +6,7 @@ FROM maven:3.8.1-openjdk-15-slim AS builder
 #WORKDIR app/
 #
 #RUN mvn package -DskipTests=true
-#RUN mkdir /opt/jar && mv ./application/target/sns_producer-*.jar /opt/jar/application.jar
+#RUN mkdir /opt/jar && mv ./application/target/sns-producer-*.jar /opt/jar/application.jar
 #
 #COPY pom.xml /opt/jar/
 #

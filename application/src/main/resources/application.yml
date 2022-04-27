@@ -4,7 +4,7 @@ info:
 
 spring:
   application:
-    name: sns_producer
+    name: sns-producer
   main:
     allow-bean-definition-overriding: true
 

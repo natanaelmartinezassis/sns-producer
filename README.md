@@ -28,7 +28,7 @@ Generate the application docker image.
 
 ```
 $ cd docker-compose/
-$ docker-compose build sns_producer
+$ docker-compose build sns-producer
 ```
 
 ### Third Step: localstack and application containers
