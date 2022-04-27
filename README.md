@@ -33,7 +33,7 @@ $ docker-compose build sns-producer
 
 ### Third Step: localstack and application containers
 
-Create localstack and application containers using docker-compose.
+Run localstack and application containers using docker-compose.
 
 ```
 $ docker-compose up -d

@@ -1,4 +1,4 @@
-version: '3.0'
+version: '3.5'
 
 services:
   localstack:
@@ -9,9 +9,11 @@ services:
       - AWS_DEFAULT_REGION=us-east-1
       - EDGE_PORT=4566
     ports:
-      - 4566-4597:4566-4597
+      - "4566-4597:4566-4597"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - foobar
 
   sns-producer:
     build:
@@ -21,6 +23,13 @@ services:
     environment:
       - AWS_ENDPOINT=http://localstack:4566
     ports:
-      - 8080:8080
+      - "8080:8080"
     depends_on:
       - localstack
+    networks:
+      - foobar
+
+networks:
+  foobar:
+    name: foobar
+    driver: bridge
